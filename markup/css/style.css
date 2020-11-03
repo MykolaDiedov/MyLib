@@ -1,0 +1,388 @@
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+* {padding: 0; margin: 0}
+body {
+	min-width: 1440px;
+}
+.wrapper {
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	display: flex;
+	flex-grow: 1;
+}
+/*----------------------header start----------------------*/
+header {
+	background: #fff;
+	box-shadow: 0 4px 4px 0 rgba(79, 88, 178, 0.25);
+	display: flex;
+	align-items: center;
+	padding: 24px 48px;
+	z-index: 1;
+}
+.nav { 
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-start;
+	align-items: center;
+}
+header ul {
+	display: inline-flex;
+	font-family: Helvetica, Arial, sans-serif;
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 2;
+}
+.nav-item {
+	padding: 0 32px 0  0;
+}
+.nav-item a {
+	text-decoration: none;
+	color: #131320;
+}
+.logo {
+	color: #6a75ca;
+	font-family: Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+  	font-size: 24px;
+ 	font-weight: bold;
+  	line-height: 1.33;
+  	margin: 0 165px 0 0;
+}
+/*----------------------header end----------------------*/
+/*----------------------sidebar start----------------------*/
+.sidebar {
+	background: #6a75ca;
+	flex: 0 0 240px;
+}
+.sidebar ul {
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	list-style: none;
+	padding: 32px 0 0 48px;
+	text-decoration: none;
+}
+.sidbar-item {
+	padding: 0 0 16px 0;
+}
+.sidebar a {
+	text-decoration: none;
+	color: #fff;
+}
+.sidebar a:hover,.nav-item a:hover {
+	text-decoration: underline;
+}
+/*----------------------sidebar end----------------------*/
+/*----------------------main start----------------------*/
+.heading {
+	border-bottom: 1px #131320 solid;
+	margin: 0 0 24px 0;
+}
+.heading.home {
+	border: none;
+	display: flex;
+	justify-content: center;
+}
+.Headings {
+	display: flex;
+	align-items: center;
+	color: #131320;
+	justify-content: flex-start;
+	margin: 0 48px 48px;
+	border-bottom: 1px #131320 solid;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.33;
+}
+.dashboard {
+	font-size: 54px;
+  	font-weight: bold;
+  	line-height: 1.17;
+  	margin: 100px 0 100px 0;
+  	text-align: center;
+}
+main {
+	flex-grow: 1;
+	background: #eff2f8;
+}
+.h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #131320;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.17;
+	margin: 24px 48px;
+}
+.h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #131320;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-transform: uppercase;
+	margin: 0 0 15px 0;
+}
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+  	font-size: 54px;
+  	font-weight: bold;
+ 	line-height: 1.17;
+ 	margin: 42px 48px;
+}
+h2 {
+	font-family: Helvetica, Arial, sans-serif;
+  	font-size: 32px;
+  	font-weight: bold;
+ 	line-height: 1.17;
+	margin: 21px 48px;
+}
+h3 {
+	font-family: Helvetica, Arial, sans-serif;
+  	font-size: 24px;
+  	font-weight: bold;
+ 	line-height: 1.75;
+	margin: 21px 48px;
+}
+h4 {
+	font-family: Helvetica, Arial, sans-serif;
+  	font-size: 16px;
+  	font-weight: bold;
+ 	line-height: 1.31;
+	margin: 21px 48px;
+}
+h5 {
+	font-family: Helvetica, Arial, sans-serif;
+  	font-size: 16px;
+  	font-weight: bold;
+ 	line-height: 1.31;
+	margin: 21px 48px;
+}
+h6 {
+	font-family: Helvetica, Arial, sans-serif;
+  	font-size: 16px;
+  	font-weight: bold;
+ 	line-height: 1.31;
+	margin: 21px 48px 32px 48px;
+}
+/*----------------------main end----------------------*/
+/*----------------------box start----------------------*/
+.blocks {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+.longblocks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.cut {
+	background: #fff;
+	width: 240px;
+  	height: 240px;
+  	margin: 0 0 48px 38px;
+  	padding: 32px 32px;
+  	box-shadow: 0 4px 10px 0 rgba(79, 88, 178, 0.25);
+  	clip-path: polygon(80% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);
+  	font-size: 16px;
+	line-height: 1.31;
+	color: #7d868e;
+}
+.cut:first-child {
+	margin: 0 0 48px 0;
+}
+.long {
+	width: 796px;
+  	height: 240px;
+  	clip-path: polygon(95% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);
+  	padding: 0 32px;
+  	background: #fff;
+  	margin: 0 0 48px 0;
+}
+.violet {
+	background: #6a75ca;
+	color: #fff;
+}
+.longbox {
+	display: flex;
+	align-items: center;
+	background: #6a75ca;
+	color: #fff;
+	justify-content: flex-start;
+	padding: 24px 48px;
+ 	margin: 0 48px 48px;
+ 	border-radius: 8px;
+ 	height: 127px;
+ 	position: relative;
+ }
+ .components {
+ 	margin: 0 48px 28px;
+ }
+.info {
+	width: 24px;
+  	height: 24px;
+  	margin: 0 32px 0 0;
+}
+.content {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.31;
+	color: #fff;
+	margin: 32px 0;
+}
+.white {
+	font-family: Courier;
+  	font-size: 16px;
+ 	font-style: normal;
+ 	line-height: 1.31;
+ 	color: #7d868e;
+ 	position: relative;
+}
+.longbox:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 50px 0;
+	border-color: transparent #eff2f8 transparent transparent;
+}
+.fieldset:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 60px 60px 0;
+	border-color: transparent #eff2f8 transparent transparent;
+}
+fieldset {
+	border: solid 1px #4f58b2;
+	border-radius: 8px;
+	padding: 16px 16px;
+	font-family: Helvetica;
+  	font-size: 12px;
+  	line-height: 1.75;
+  	color: #ffc806;
+  	margin: 0 48px 35px 48px;
+}
+fieldset legend {
+	padding: 0 8px;
+}
+.fieldset {
+	background: #fff;
+	justify-content: center;
+	padding: 24px 48px;
+ 	border-radius: 8px;
+ }
+/*----------------------box end----------------------*/
+/*----------------Chevron menu start-----------------*/
+.chevron {
+ 	margin: 0 48px 59px;
+ }
+.navi {
+	padding: 2px 60px;
+}
+.navi-list {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+.navi-item a {
+	color: #000;
+	background: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 32px;
+	line-height: 37px;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 30px 25px 29px 50px;
+	display: inline-block;
+	position: relative;
+}
+.navi-item a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: transparent transparent transparent #000;
+}
+.navi-item a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -25px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: transparent transparent transparent #fff; 
+}
+.navi.gradient {
+	background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
+.gradient .navi-item a:before {
+	left: -28px;
+	border-width: 0 28px 52px 0;
+	border-color: transparent #fff transparent transparent;
+}
+.gradient .navi-item:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -25px;
+	bottom: 0;
+	border-style: solid;
+	border-width: 0 0 48px 25px;
+	border-color: transparent transparent #fff transparent;
+}
+.gradient .navi-item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 25px 0 25px;
+	position: relative;
+}
+.gradient .navi-item a {
+	padding: 30px 25px 29px 25px;
+}
+.navi-item:hover {
+	cursor: pointer;
+}
+.gradient .navi-item:hover a:before {
+	border-color: transparent rgba(255, 255, 255, 0.7) transparent transparent;
+}
+.gradient .navi-item:hover:before {
+	border-color: transparent transparent rgba(255, 255, 255, 0.7) transparent;
+}
+.navi-item:hover a {
+	background: rgba(255, 255, 255, 0.7);
+}
+.navi-item:hover a:after {
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+}
+/*----------------Chevron menu end-----------------*/

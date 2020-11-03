@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MYLIB</title>
+        <meta charset = "utf-8">
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+	    <body>
+    		 <div class="wrapper">
+	    		<header>
+	    			<div class="logo">mylib</div>
+	    			<div class="nav">
+		    			<ul>
+		    		 		<li class="nav-item">
+		    		 			<a href="elements.html">Elements</a>
+		    		 		</li>
+		    		 		<li class="nav-item">
+		    		 			<a href="#">Components</a>
+		    		 		</li>
+		    		 		<li class="nav-item">
+		    		 			<a href="#">Layouts</a>
+		    		 		</li>
+		    		 		<li class="nav-item">
+		    		 			<a href="#">Drafts</a>
+		    		 		</li>
+		    		 		<li class="nav-item">
+		    		 			<a href="#">Documentation</a>
+		    		 		</li>
+		    		 	</ul>
+	    		 	</div>
+	    		</header>
+	    		<div class="container">
+	    		 	<div class="sidebar">
+	    		 		<ul>
+	    		 			<li class="sidbar-item">
+	    		 				<a href="#chevron" id="chevron">chevron menu</a>
+	    		 			</li>
+	    		 			<li class="sidbar-item">
+	    		 				<a href="#">dropdown menu</a>
+	    		 			</li>
+	    		 			<li class="sidbar-item">
+	    		 				<a href="#">modal box</a>
+	    		 			</li>
+	    		 			<li class="sidbar-item">
+	    		 				<a href="#">allerts</a>
+	    		 			</li>
+	    		 		</ul>
+	    		 	</div>
+	    		 	<main>
+	    		 		<div class="heading">
+	    		 		<h1 class="h1">Chevron menu</h1>
+	    		 		</div>
+	    		 		<div class="longbox violet components">
+	    		 			<div class="info"><img src="img/info.png"></div>
+	    		 			<div class="content"> 
+		    		 			<p>Possible to use on gradient background</p>
+								<p>Easy to use opacity for items background</p>
+								<p>Cross-browser</p>
+							</div>
+	    		 		</div>
+	    		 		<!--  Chevron menu start -->
+						<div class="chevron">	
+							<nav class="navi gradient">
+								<ul class="navi-list">
+								   	<li class="navi-item">
+								    	<a href="#">about</a>
+								    </li>
+								    <li class="navi-item">
+								    	<a href="#">careers</a>
+								    </li>
+								    <li class="navi-item">
+								    	<a href="#">faq</a>
+								    </li>
+								    <li class="navi-item">
+								    	<a href="#">contact</a>
+								    </li>
+								 </ul>
+							</nav>
+						</div>
+	    		 		<!--  Chevron menu end -->
+	    		 		<fieldset>
+	    		 			<legend align="left">HTML</legend>
+	    		 			<div class="fieldset white">
+	    		 				<div class="content white">
+	    		 					<p>&lt;div class="chevron"&gt;</p>
+									<p>&lt;nav class="navi gradient"&gt;</p>
+									<p>&lt;ul class="navi-list"&gt;</p>
+								   	<p>&lt;li class="navi-item"&gt;</p>
+								    <p>&lt;a href="#">about&lt;/a></p>
+								    <p>&lt;/li></p>
+								    <p>&lt;li class="navi-item"&gt;</p>
+								    <p>&lt;a href="#">careers&lt;/a></p>
+								    <p>&lt;/li&gt;</p>
+								    <p>&lt;li class="navi-item"&gt;</p>
+								    <p>&lt;a href="#">faq&lt;/a></p>
+								    <p>&lt;/li&gt;</p>
+								  	<p>&lt;li class="navi-item"&gt;</p>
+								    <p>&lt;a href="#">contact&lt;/a></p>
+								    <p>&lt;/li&gt;</p>
+									<p>&lt;/ul&gt;</p>
+									<p>&lt;/nav&gt;</p>
+									<p>&lt;/div&gt;<p>
+							</div>
+	    		 		</fieldset>
+	    		 		<fieldset>
+	    		 			<legend align="left">CSS</legend>
+	    		 			<div class="fieldset white">
+	    		 				<div class="content white">
+	    		 				<p>.chevron {</p>
+								 	<p>margin: 0 48px 59px;</p>
+								 <p>}</p>
+								<p>.navi {</p>
+									<p>padding: 2px 60px;</p>
+								<p>}</p>
+								<p>.navi-list {</p>
+									<p>text-align: right;</p>
+									<p>padding: 0;</p>
+									<p>margin: 0;</p>
+								<p>}</p>
+								<p>.navi-item a {</p>
+									<p>color: #000;</p>
+									<p>background: #fff;</p>
+									<p>text-decoration: none;</p>
+									<p>text-transform: uppercase;</p>
+									<p>font-size: 32px;</p>
+									<p>line-height: 37px;</p>
+									<p>font-family: Helvetica, Arial, sans-serif;</p>
+									<p>padding: 30px 25px 29px 50px;</p>
+									<p>display: inline-block;</p>
+									<p>position: relative;</p>
+								<p>}</p>
+								<p>.navi-item a:before {</p>
+									<p>content: "";</p>
+									<p>display: block;</p>
+									<p>position: absolute;</p>
+									<p>left: 0;</p>
+									<p>top: 0;</p>
+									<p>width: 0;</p>
+									<p>height: 0;</p>
+									<p>border-style: solid;</p>
+									<p>border-width: 48px 0 48px 25px;</p>
+									<p>border-color: transparent transparent transparent #000;</p>
+								<p>}</p>
+								<p>.navi-item a:after {</p>
+									<p>content: "";</p>
+									<p>display: block;</p>
+									<p>position: absolute;</p>
+									<p>right: -25px;</p>
+									<p>top: 0;</p>
+									<p>width: 0;</p>
+									<p>height: 0;</p>
+									<p>border-style: solid;</p>
+									<p>border-width: 48px 0 48px 25px;</p>
+									<p>border-color: transparent transparent transparent #fff;</p> 
+								<p>}</p>
+								<p>.navi.gradient {</p>
+									<p>background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);</p>
+								<p>}</p>
+								<p>.gradient .navi-item a:before {</p>
+									<p>left: -28px;</p>
+									<p>border-width: 0 28px 52px 0;</p>
+									<p>border-color: transparent #fff transparent transparent;</p>
+								<p>}</p>
+								<p>.gradient .navi-item:before {</p>
+									<p>content: "";</p>
+									<p>display: block;</p></p>
+									<p>position: absolute;</p>
+									<p>left: -25px;</p>
+									<p>bottom: 0;</p></p>
+									<p>border-style: solid;</p>
+									<p>border-width: 0 0 48px 25px;</p>
+									<p>border-color: transparent transparent #fff transparent;</p>
+								<p>}</p>
+								<p>.gradient .navi-item {</p>
+									<p>display: inline-block;</p>
+									<p>vertical-align: top;</p>
+									<p>margin: 0 25px 0 25px;</p>
+									<p>position: relative;</p>
+								<p>}</p>
+								<p>.gradient .navi-item a {</p>
+									<p>padding: 30px 25px 29px 25px;</p>
+								<p>}</p>
+								<p>.navi-item:hover {</p>
+									<p>cursor: pointer;</p>
+								<p>}</p>
+								<p>.gradient .navi-item:hover a:before {</p>
+									<p>border-color: transparent rgba(255, 255, 255, 0.7) transparent transparent;</p>
+								<p>}</p>
+								<p>.gradient .navi-item:hover:before {</p>
+									<p>border-color: transparent transparent rgba(255, 255, 255, 0.7) transparent;</p>
+								<p>}</p>
+								<p>.navi-item:hover a {</p>
+									<p>background: rgba(255, 255, 255, 0.7);</p>
+								<p>}</p>
+								<p>.navi-item:hover a:after {</p>
+									<p>border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);</p>
+								<p>}</p>
+								</div>
+							</div>
+	    		 		</fieldset>
+	    		 	</main>
+    		 	</div>
+    		 </div>
+    	</body>
+</html>
